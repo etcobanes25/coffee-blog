@@ -1,0 +1,25 @@
+.post-page {
+  max-width: 720px;
+  padding: clamp(48px, 7vw, 88px) clamp(20px, 5vw, 48px) clamp(72px, 10vw, 120px);
+}
+
+.post-back {
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  color: var(--caramel);
+  display: inline-block;
+  margin-bottom: 24px;
+}
+.post-back:hover { color: var(--espresso); }
+
+.post-page h1 {
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  margin-top: 0.3em;
+}
+
+.post-body { margin-top: 32px; }
+.post-body p {
+  font-size: 1.08rem;
+  color: var(--dark-roast);
+  margin-bottom: 1.4em;
+}

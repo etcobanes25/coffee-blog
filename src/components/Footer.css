@@ -1,0 +1,26 @@
+.footer {
+  margin-top: auto;
+  background: var(--espresso);
+  color: var(--vanilla);
+}
+
+.footer-inner {
+  padding: 28px clamp(20px, 5vw, 48px);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.footer-line {
+  margin: 0;
+  font-family: var(--display);
+  font-size: 0.95rem;
+}
+
+.footer-sub {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  color: var(--hazelnut);
+}

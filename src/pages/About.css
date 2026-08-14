@@ -1,0 +1,55 @@
+.about-hero {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: clamp(28px, 5vw, 64px);
+  align-items: center;
+  padding: clamp(56px, 8vw, 96px) 0 clamp(40px, 6vw, 64px);
+}
+
+.about-photo {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: var(--radius);
+  box-shadow: 8px 8px 0 var(--hazelnut);
+}
+
+.about-hero h1 { font-size: clamp(1.8rem, 4vw, 2.6rem); max-width: 16ch; }
+.about-lead { color: var(--dark-roast); max-width: 60ch; font-size: 1.02rem; }
+
+.about-strip { height: 14px; }
+
+.about-facts { padding: clamp(48px, 7vw, 80px) 0; }
+
+.facts-list { margin-top: 20px; }
+
+.fact-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--hazelnut);
+}
+
+.fact-row dt {
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--mocha);
+  min-width: 160px;
+}
+
+.fact-row dd {
+  margin: 0;
+  text-align: right;
+  color: var(--espresso);
+  font-family: var(--display);
+}
+
+@media (max-width: 700px) {
+  .about-hero { grid-template-columns: 1fr; }
+  .about-photo { max-width: 260px; margin: 0 auto; }
+  .fact-row { flex-direction: column; gap: 4px; }
+  .fact-row dd { text-align: left; }
+}
